@@ -1,0 +1,522 @@
+/*
+Стили
+*/
+
+:root 
+{
+    --Color_Name_Group: #F9F5D0;
+    --Color_Menu_Left: rgb(33, 47, 68);
+    --Color_Menu_Right: #78b0a0;
+    --Color_Name_Group_Bottom: #F9F5D0;
+}
+
+/*___________________________________________________*/
+
+/*
+Анимации
+*/
+
+@keyframes Anime_Hover_Element_Menu
+{
+    from
+    {
+        background-color: rgba(0, 0, 0, 0);
+        
+    }
+    to
+    {
+        background-color: rgba(0, 0, 0, 0.164);
+    }
+}
+
+/*___________________________________________________*/
+
+
+
+body
+{
+    background-image: url(/style/Fon_Site.jpg);
+    background-position-x: 200px;
+    background-size: 100%;
+}
+
+#logo
+{
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    text-align: center;
+    font-family: 'BadScript';
+    color: var(--Color_Name_Group);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#NavigateMenu
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: var(--Color_Menu_Left);
+    width: 200px;    
+    box-shadow: 0 0 15px rgb(27, 27, 27);
+}
+
+#LinksMenu
+{
+    position: absolute;
+    bottom: 0px;
+    height: 180px;
+    width: 100%;
+    background-color: var(--Color_Name_Group_Bottom);
+}
+
+#chert_1
+{
+    position: absolute;
+    top: 80px;
+    width: 80%;
+    left: 10%;
+}
+
+.Menu_List_Class
+{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    font-family: 'UbuntuCondensed';
+    font-size: 22px;  
+    color: rgb(163, 163, 163);
+}
+
+#Menu_List_1
+{    
+    top: 120px;
+    color: rgb(180, 69, 69);              
+}
+
+#Menu_List_2
+{   
+    top: 160px;
+}
+
+#Menu_List_3
+{
+    top: 200px;
+}
+
+.Menu_List_Class:hover
+{
+    
+    animation-name: Anime_Hover_Element_Menu;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+#Player_Music
+{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 350px;
+    height: 432px;        
+    box-shadow: 0 0 15px black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#Photo_Music
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 350px;
+    background-image: url('/style/Fon_Album.jpg');    
+    background-size: 100% 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#Photo_Music_Name_Music > h4
+{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: white;
+    font-family: 'BadScript';
+}
+
+#Photo_Music_Name_Music > h5
+{
+    position: absolute;
+    bottom: -18px;
+    right: 15px;
+    color: white;
+    font-family: 'BadScript';
+}
+
+#Player_Control_Panel
+{    
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+#Player_Info_Music
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 65%;
+}
+
+#Player_Name_Music
+{
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: 'UbuntuCondensed';
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#Player_Name_Group
+{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: 'UbuntuCondensed';
+    font-size: 12px;
+    
+}
+
+#Player_Speek_List_Back_Panel
+{
+    position: absolute;
+    left: 65%;
+    width: 35%;
+    height: 100%;
+}
+
+#Speek_Control
+{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+#List_Control
+{
+    position: absolute;
+    top: 12px;
+    left: 52px;
+    height: 20px;
+    width: 20px;
+}
+
+#For_Control
+{
+    position: absolute;
+    top: 12px;
+    left: 90px;
+    height: 20px;
+    width: 20px;
+}
+
+#State_Music_Play
+{
+    position: absolute;
+    top: 400px;
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#Time_Play_Progress
+{
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    font-size: 14px;
+    font-family: 'UbuntuCondensed';
+}
+
+#Line_Play_Progress
+{
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    width: 35%;
+    height: 5px;    
+    background-color: rgb(85, 85, 85);
+}
+
+#Control_Time_Line
+{
+    z-index: 1;
+    position: absolute;
+    top: 1.4px;
+    left: 30%;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid white;    
+    background-color: rgb(44, 44, 44);
+}
+
+#Conteiner_State_Line
+{
+    position: absolute;
+    top: 7px;    
+    left: 58px;
+    height: 16px;
+    width: 230px;    
+}
+
+#Time_Play_Over
+{
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    font-size: 14px;
+    font-family: 'UbuntuCondensed';
+}
+
+#Line_Play_Over
+{
+    z-index: 0;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    width: 65%;
+    height: 5px;    
+    background-color: rgb(190, 190, 190);
+}
+
+#Control_Music_Next_Pasue_Bake
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 65%;
+}
+
+#back_button
+{
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/style/back.svg);
+}
+
+#back_Pause
+{
+    position: absolute;
+    left: 115px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/style/play-button.svg);
+}
+
+#back_Next
+{
+    position: absolute;
+    left: 180px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/style/next.svg);
+}
+
+#vk_button
+{
+    position: absolute;
+    left: 15px;
+    top: 22px;
+    height: 32px;
+}
+
+#Name_Vk_Group
+{
+    position: absolute;
+    left: 60px;
+    top: 22px;
+    height: 32px;
+    font-family: 'BadScript';
+    font-weight: 800;
+}
+
+
+
+#New_Lenta
+{
+    position: absolute;
+    left: 280px;
+    top: 50px;
+    width: 600px;
+    height: 570px;
+    background-color: rgba(82, 82, 82, 0.637);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(56, 56, 56, 0.637);
+}
+
+.Block_Lenta
+{
+    position: absolute;
+    left: 20px;
+    background-color: white;
+    width: 500px;
+}
+
+#New_Lenta_1
+{
+    
+    
+    top: 20px;
+    
+    height: 200px;
+    background-color: white;
+}
+
+#New_Lenta_1_Img
+{
+    position: absolute;
+    height: 200px;
+    width: 250px;
+}
+
+#New_Lenta_1_Zagalovoc
+{
+    position: absolute;
+    left: 280px;
+}
+
+#New_Lenta_1_Text
+{
+    position: absolute;
+    left: 280px;
+    top: 30px;
+    
+}
+
+#New_Lenta_2
+{
+    position: absolute;
+    left: 20px;
+    top: 250px;
+    height: 280px;
+    background-color: white;
+}
+
+#New_Lenta_2_Img
+{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    height: 150px;;
+}
+
+#New_Lenta_2_Zagalovoc
+{
+    position: absolute;
+    left: 25px;
+    top: 150px;
+}
+
+#New_Lenta_2_Text
+{
+    position: absolute;
+    left: 280px;
+    top: 145px;
+    
+}
+
+#Select_List_Menu_5
+{
+    position: absolute;
+    bottom: 10px;
+    right: 110px;
+    background-color: rgb(54, 54, 54);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
+
+#Select_List_Menu_4
+{
+    position: absolute;
+    bottom: 10px;
+    right: 85px;
+    background-color: rgb(94, 94, 94);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(94, 94, 94);
+}
+
+#Select_List_Menu_3
+{
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    background-color: rgb(94, 94, 94);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(94, 94, 94);
+}
+
+#Select_List_Menu_2
+{
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    background-color: rgb(94, 94, 94);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(94, 94, 94);
+}
+
+#Select_List_Menu_1
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(94, 94, 94);
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(94, 94, 94);
+}
+
+
+@font-face
+{
+    font-family: UbuntuCondensed;
+    src: url('UbuntuCondensed-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: BadScript;
+    src: url('/style/BadScript-Regular.ttf');
+}
