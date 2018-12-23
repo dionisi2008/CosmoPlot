@@ -1,0 +1,6 @@
+//Создание базы:
+
+idb.open(name, version, upgradeDb => {})
+
+//Создание Таблицы
+upgradeDB.createObjectStore('store2', { keyPath: 'name' })
