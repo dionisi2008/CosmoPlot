@@ -1,7 +1,6 @@
-indexedDB.deleteDatabase("CosmoPlotBase");
     window.addEventListener("DOMContentLoaded", function () 
     {
-        var ObjStore;
+        var ObjStore;   
         console.log("Работа Базой данных..")
         
         
