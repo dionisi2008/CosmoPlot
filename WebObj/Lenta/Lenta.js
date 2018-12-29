@@ -1,3 +1,5 @@
+ window.onload = function () 
+ {
  var Base = indexedDB.open("CosmoPlotBase");
 console.log("lolo");
             Base.onsuccess = function ()
@@ -49,3 +51,4 @@ console.log("lolo");
                 
                 
         }
+    }
