@@ -1,9 +1,11 @@
-var Base = indexedDB.open("CosmoPlotBase");
- 
+ var Base = indexedDB.open("CosmoPlotBase");
+console.log("lolo");
             Base.onsuccess = function ()
-            {
-                var CreatePost = Base.result.transaction("Profile", "readonly").objectStore("Profile").get("CreatePost");
-                CreatePost.onsuccess = function ()
+            {                
+                    var trans = Base.result.transaction("Profile", "readonly");
+
+                    CreatePost = trans.objectStore("Profile").get("CreatePost");
+                    CreatePost.onsuccess = function ()
                 {
                     var Request_Obj = new XMLHttpRequest();
                     var HtmlObj = document.implementation.createHTMLDocument();
@@ -44,4 +46,6 @@ var Base = indexedDB.open("CosmoPlotBase");
                                                   
                 }
             }
+                
+                
         }

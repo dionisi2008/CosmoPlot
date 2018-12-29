@@ -2,7 +2,7 @@
     
         var ObjStore;
         console.log("Работа Базой данных..")
-        indexedDB.deleteDatabase("CosmoPlotBase");
+        //indexedDB.deleteDatabase("CosmoPlotBase");
         var request = indexedDB.open("CosmoPlotBase")
         var RequestXML = new XMLHttpRequest();
         RequestXML.open("GET", "HashSumBase.txt");
