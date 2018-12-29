@@ -1,10 +1,10 @@
-    
+indexedDB.deleteDatabase("CosmoPlotBase");
     window.addEventListener("DOMContentLoaded", function () 
     {
         var ObjStore;
         console.log("Работа Базой данных..")
-        indexedDB.deleteDatabase("CosmoPlotBase");
-        var request = indexedDB.open("CosmoPlotBase")
+        
+        
         var RequestXML = new XMLHttpRequest();
         RequestXML.open("GET", "HashSumBase.txt");
         RequestXML.send(null);
@@ -16,7 +16,7 @@
             console.log("Актуальная Сумма " + HashSumBase);
     
     
-    
+            var request = indexedDB.open("CosmoPlotBase");
             request.onupgradeneeded = function()
             {
                 console.log("Создание базы данных");
@@ -39,9 +39,6 @@
     
     
     
-        request.onerror = function()
-        {
-            console.log("Произошла ошибка: " + request.error + ". При попытки открыть базу CosmoPlot");
-        }
+      
     }
     });
