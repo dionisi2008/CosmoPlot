@@ -1,5 +1,5 @@
     
-    window.onload = function ()
+    window.addEventListener("DOMContentLoaded", function () 
     {
         var ObjStore;
         console.log("Работа Базой данных..")
@@ -44,4 +44,4 @@
             console.log("Произошла ошибка: " + request.error + ". При попытки открыть базу CosmoPlot");
         }
     }
-    }
+    });
