@@ -25,7 +25,11 @@
     
                 var ProfileObj = request.result.createObjectStore("Profile");
                 ProfileObj.add("True", "CreatePost");
+                //- - - - - -- 
+
+                var Posts = request.result.createObjectStore("Posts");
                 console.log("База данных успешно создана")
+                
             }
     
             request.onsuccess = function()

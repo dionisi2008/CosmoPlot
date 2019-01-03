@@ -23,7 +23,7 @@
 #Create_Post
     {
         animation: Animation_Post_visible 1s;
-        
+        border: 1px solid;
        
         position: absolute;
         top: 20px;
@@ -59,7 +59,7 @@
         
     }
 
-    #Create_Post > #Img_Url1
+    #Create_Post > #Img_Url
     {
         position: absolute;
         top: 160px;

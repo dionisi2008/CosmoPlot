@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #Testing
+        {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            border: 1px solid;
+            width: 800px;
+            height: 500px;
+        }
+
+        #CreateObj
+        {
+            position: absolute;
+            top: 600px;
+            left: 50px;
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+        }
+        #CreateObj > input
+        {
+            width: 100%;
+            border: none;
+            height: 40px;
+            font-size: 35px;
+        }
+
+        #CreateObj > button
+        {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            height: 40px;
+            border: none;
+        }
+
+        #TestObj
+        {
+            position: absolute;
+            top: 600px;
+            left: 400px;
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+        }
+
+        .ClassObj
+        {
+            position: absolute;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () 
+        {
+            function ResizeMaket ()
+            {            
+                document.getElementById("TestObj").style.width = document.getElementById("widthNew").value + "px";
+                document.getElementById("TestObj").style.height = document.getElementById("heightNew").value + "px";
+            }
+
+        function CreateObject ()
+        {
+            var tesss = HTMLElement;
+            console.log(document.getElementById("TestObj").innerHTML);
+            tesss.innerHTML = document.getElementById("TestObj").innerHTML;
+            tesss.id = "lolo";
+            document.getElementById("Testing").append(tesss.innerHTML);
+        }
+        });
+        
+    </script>
+    <aside id="Testing">
+        
+    </aside>
+
+    <aside id="CreateObj">
+            <input type="text" name="" id="widthNew" class="SizeBoxNew" placeholder="Ширина" oninput="ResizeMaket()">
+            <input type="text" name="" id="heightNew" class="SizeBoxNew" placeholder="Высота" oninput="ResizeMaket()">
+            <button onclick="CreateObject ()">
+                Создать
+            </button>
+    </aside>
+
+    <aside id="TestObj" class="ClassObj">
+        TestObj
+    </aside>
+</body>
+</html>
